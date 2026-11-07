@@ -74,29 +74,29 @@ Script này sẽ chạy Day 18 pipeline của bạn trên **50 câu hỏi** và 
 Day24-Track3-Eval-Guard/
 │
 ├── src/
-│   ├── m1_chunking.py      ← copy từ Day 18 của bạn
-│   ├── m2_search.py        ← copy từ Day 18 của bạn
-│   ├── m3_rerank.py        ← copy từ Day 18 của bạn
-│   ├── m4_eval.py          ← copy từ Day 18 của bạn (★ cần implement xong)
-│   ├── m5_enrichment.py    ← copy từ Day 18 của bạn
-│   ├── pipeline.py         ← copy từ Day 18 của bạn
+│   ├── m1_chunking.py
+│   ├── m2_search.py
+│   ├── m3_rerank.py
+│   ├── m4_eval.py
+│   ├── m5_enrichment.py
+│   ├── pipeline.py
 │   │
-│   ├── phase_a_ragas.py    ★ BẠN IMPLEMENT — Tasks 1–4
-│   ├── phase_b_judge.py    ★ BẠN IMPLEMENT — Tasks 5–8
-│   └── phase_c_guard.py    ★ BẠN IMPLEMENT — Tasks 9–12
+│   ├── phase_a_ragas.py
+│   ├── phase_b_judge.py
+│   └── phase_c_guard.py 
 │
 ├── guardrails/
-│   ├── config.yml          ← NeMo Guardrails config (đã có sẵn)
-│   └── rails.co            ← Colang dialogue flows (có thể mở rộng)
+│   ├── config.yml
+│   └── rails.co
 │
-├── data/                   ← Corpus HR policy (25 tài liệu tiếng Việt)
+├── data/
 │
-├── test_set_50q.json       ← 50 câu hỏi, 3 distributions
-├── human_labels_10q.json   ← 10 nhãn nhân để tính Cohen κ
-├── adversarial_set_20.json ← 20 inputs tấn công để test guardrail
+├── test_set_50q.json
+├── human_labels_10q.json
+├── adversarial_set_20.json 
 │
-├── setup_answers.py        ← Chạy pipeline → answers_50q.json
-├── check_lab.py            ← Kiểm tra trước khi nộp
+├── setup_answers.py
+├── check_lab.py
 │
 ├── reports/
 │   ├── ragas_50q.json      ★ auto-generated (Phase A)
